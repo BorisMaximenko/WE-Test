@@ -1,0 +1,21 @@
+// @font-face {
+//     font-family: 'Circe';
+//     src: url(fonts/Circe-Regular.woff2) format(woff2),
+//     url(fonts/Circe-Regular.woff) format(woff);
+// }
+// @font-face {
+//     font-family: 'Circe';
+//     src: url(fonts/Circe-Bold.woff2) format(woff2),
+//     url(fonts/Circe-Bold.woff) format(woff);
+// }
+
+// @font-face {
+//     font-family: 'Circe';
+//     src: url(fonts/Circe-Light.woff2) format(woff2),
+//     url(fonts/Circe-Light.woff) format(woff);
+// }
+
+
+@include font-face('Circe', 700, 'fonts/circe-bold');
+@include font-face('Circe', 300, 'fonts/circe-light');
+@include font-face('Circe', 400, 'fonts/circe-regular');
