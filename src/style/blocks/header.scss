@@ -1,0 +1,96 @@
+.header {
+
+    &__logo {
+        position: absolute;
+        width: 236px;
+        height: 114px;
+        top: 14px;
+    }
+
+    &__top {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        display: flex;
+        position: relative;
+        align-items: center;
+
+        &-wrapper {
+            background-color: $primary;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            column-gap: 41px;
+            margin-left: 268px;
+        }
+
+        &-item{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            column-gap: 10px;
+            font-size: 12px;
+        }
+
+        &-link {
+            color: $lightest;
+        }
+
+    }
+
+    &__bot {
+        padding-top: 5px;
+        padding-bottom: 6px;
+        display: flex;
+        align-items: center;
+        background: $lightest;
+
+        &-link {
+            font-size: 14px;
+            font-weight: bold;
+            color: $darkest;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            column-gap: 26px;
+            padding-right: 12px;
+            margin-left: 268px;
+           }
+
+        &-svg {
+            margin-left: 40px;
+        }
+
+        &-tel {
+            color: $darkest;
+            font-size: 15px;
+            padding-left: 10px;
+          
+        }
+    }
+    
+    &__button {
+        border: none;
+        font-size: 11px;
+
+        &-left {
+            padding: 11px 15px;
+            max-width: 206px;
+            margin-right: 6px;
+            background-color: #ededed;
+        }
+
+        &-right {
+            padding: 11px 17px;
+            max-width: 157px;
+            background-color: #cc2f38;
+            color: $lightest;
+        }
+    }
+}
+

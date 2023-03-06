@@ -4,30 +4,103 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="img/favicon.png" type="image/png">
-  
+  <link rel="icon" href="img/logo.png" type="image/png">
   <title>WE Test</title>
 </head>
 
-<body>
+<body class="page">
 
-  <header>
-    <h1 class="re">Webpack</h1>
+  <header class="header">
+
+   
+
+      <div class="header__top-wrapper">
+        <div class="header__top container">
+          <ul class="header__top-list">
+
+            <li class="header__top-item">
+                <svg class="top-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+                  <image id="_830925" data-name="830925" width="24" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACu0lEQVRIiaWW3YtNYRTGf+ecPfvM+AxDCFFKlHIvhf/AhSv/ga8Lys1cmMiVjxuE3LkiNCUfFyh3XAi5EhemNJKYKHMOZ87Zr1aeVcvrzDRl1W7vtfdaz1rrWet9311LKQE0gALoAPaiBjSlV/wR07tAT3op22nphXB+Sa+bXtfLQTk7+JCAHHxI914I1pCPyYACdgO4+SSv4H/EwdtKyMGtkq6VtQBYETKfFjU1VYacPfNC+hfguwK0VP1f4OZgFVwF3sqwpwB1ZVUFjksF7UjfAlwAXs4EbpiWzVfgdEZRPfA/07sRYA3wIlTnNDkbXXP6mQGVaqDLgJwdvK77N+BzsGsHGx+aThEo8GmpAg0+La1sWqZE535gdxjxJcAT4IEDFuLPo1ZhjpvKNgf3hlvg18CjMD1LgcOq7qnhF+ILBYrgMfNC4K0soWfAq4ziD8A54BAw7tPCLODegziKiNqmnucFnHfAFeCsZxZ7MBstcRSnlFAhu27om1V2F9gAjMbRKwXQDgGdlnyFeg/m69nBI955a3o9gDUC+GI5TynzRp9F1AzBXJaFYCbvi8BdWyUfAYYFak28KZsI7uKb32bgADCpreeaml8W2k9cjgHLgZOq4pTKvsG/8lENNRkFrgOPgR3AcWAP8MYC7AImgNW6DsppUs+XpFdqoI+zAawHVgK3gTHZ3dNwnPHzwMpZCKwK00MI0tP3YQUYkP4Q+ASsBX6ECUKsbAOeY+dBuE6klI5Kb6aULqeU9mU2+bUopXQrpbRd77emlMZSSptMt+26qbVQKcsRZTAoni+KlirLMm6SO4G9onodcAe4j84DN4ozvFFTNZFRloOXmjyn1s6I8Ui1B+h3WCC+faXPBO6rPBfb48p46Du4ffC9Za7g9mwL0xeuJ1xZBZalUTPX35F+vzieTNx2KqD7GxacJWEJNJJiAAAAAElFTkSuQmCC"/>
+                </svg>
+              <a class="header__top-link" href="#">Условия доставки</a>
+            </li>
+            
+            <li class="header__top-item">
+              <svg class="top-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+                <image id="_830942" data-name="830942" width="22" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAACWUlEQVQ4jY2VuW4UQRCGv53p3dnlEpfEaUAgc5pDyEgEkJEQkpDxAjwMIU9AQoyEOAIIiBApCAKDRGYHtgxe8O7O7qCCv6VfK2NtS6OZmun6+q+qrp5W0zQAbf6Nke4dYALUsitgbHYeXWBT82v5FECZBI3rt0EKW6QEBga7DlwC9gAngDfAa4PGYsOkyb8Mii2CAJeBq8BeLbICfACWgXPAC4eG+mTKMGVHgVvAMaClOevAK+CLzd8B7NRz2wSSbNIicBE4COwCNoCPwHtgbSq3AesrTQf0buwTongLwEPgFHAEWBJsSYoOSc1QoLbyOdK3/cBny/Fh4EmAHwHPgHdadbeqHNH09G5T0J4WGOp7wH4qwrbSdhq4Gx+/q7J5rLP1CKfGozV7w+zgzRc2sbLnnlR7kXI9CuW4lF3qe8vmd5MBBwYdK9yW7JGuvKX6Bhn7btBYTVPdNAs0IGeB2wFQARsrbPjecPAs0CjiBeCBIKH8qRond2/4ziU5MQN0oF2wKDEv1UBzahwfVwor0nbQoTVAjjL7zRswi2x5S28HrQUM+DfgDHBN7x5rl1TKc6SjSqZkGtpT+LUcOsrxW22v88An4L4apJCIGDeT7ceszHOaoZWgE9nPdXV1FVLaKPJ2skO+/k/4lZwmU2d3Y7n3szvsH0lKco47pqwQuG9OpTVDmvoJ5LMiwONwPqlTLRRkaIy450XzdnQ7IvI/S6iOCOK0W4jT7Q5wD/gqeCjJuyVgbsdiWWlA8vxcuFB8PPZ1/pnuU2v+TbxBAhCODtkq/AwNewVY/gMY58bBTRVN0QAAAABJRU5ErkJggg=="/>
+              </svg>            
+              <a class="header__top-link" href="#">Условия оплаты</a>
+            </li>
+
+            <li class="header__top-item">
+              <svg class="top-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+                <image id="_830920" data-name="830920" width="24" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACbElEQVRIiaWWO2tVQRDHf+eR+4pgoeADLCwkKNgo+AksxM7GRgtbwUItxcLCT2BlJVjYCFaCIFaChdgIEbW2UpGAKPG+zs3K3PwnDMuJuYkLl7szu/Of9+wpUkoAFVADE8AYBdAVvcHmMroBZqI7ujsVXQtnLLo0uhSzJ2EH7wvIwfv6nwVllWRsLUlhE8BNJrkH/7McbCiDnDZPGlNwBjgULJ0FN3vyaCTvOrJ2qPM14L3ClHJwu2AKngGv5fZUB2WIeRPCkkKe7M554C6w2gZuxlhi3gIP9hgiU3ZYCnLwge1Nwb5MqK9YjlsA87UOfBNvPTv7QyjN7cCtUi4Cy+JXCtVYuboEnAPe6LxQ3jyUa7UIdJBbfha4CrwMdT6SEqOfS9EggE8UJovM5VoHSJGDu5XLAn+0u9RsrU6p0iMDr0JcD2rvhpRSXAegQcDxaMyx6iw53SxEPzMP20pxoP0kA5+vWkm6CfwAngDHgSvAb+AU8CVYHsF9pLSBj9xrE7oH/AJOStl9gX4EPgWPcst3AmceNptF+j1NKb1KKZ0OvBMppdval4HfTyktBbqrn9N+dqve0rQ5Y+4AH5RkK79jijFhshJmka+Yt07sLZ+mkVmGplnRrPkchp03USGjCtH7gReaa9dk3IorKIMFPnJ7avcjwFHFfBLAves95geA68BjgX8F3pmCWpYN/1GKiy4bfA9l3AW3vNoBvK2JYq13dKfU4LsBfPdXML5ou2miUQCvg4FVeFaN35TbgBd7BLc7PmZMdj4q4ghetENzcNsbRnyXTWZqIbJSM+ainyNtnzgmY/e9V4zeAJq/lhogrmy0+0MAAAAASUVORK5CYII="/>
+              </svg>            
+              <a class="header__top-link" href="#">Отзывы клиентов</a>
+            </li>
+
+            <li class="header__top-item">
+              <svg class="top-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+                <image id="_830927" data-name="830927" width="21" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAACa0lEQVQ4jX2Vz4uNURjHP/fe9173aorxI6NmQ4T8GLJUiFioSSnJf2ChlIUkC2koZTGzsbGxlCxkshFKUeyEZOFXSIaU32aue+foe33fPF73+tap95znnO9znuf5nuctpZQAasA00OI3+oA9wByv/fQoAQ2gDrwDzgPfvC6iMlARac2TSRPuArYDz4CbwH3gB3+g/WuATcAy4Cpw0daZQFOkVd9COAgsAkaBp/wNkVUKDpYA+4C3wOn8xnn4wn5gADgavE4Bbf5F3eFO2TICvAfGOjORppR2pJRG/a1RSylVwnwgpTSUUur3vBRs+TiZUhrWt4yz7OmEw1CYTd9gNrAX6HdhlgJPgLNdbj8fOAYcyYBh4IEJGyG/wko7GXOV5eQU8Aa4EvZVHf49YKeqvgC4Y2MzyEq4HQiFj54vDnsyD+EaMFh2wh95se0K/g+DwJdgT0GOz6WOssPNb1dzKL2wFtgCXA/2tonrnn/Igpdch5M9CLdZ8CrSq7CuyGaYWGhlIdyisCOGgM3A8aDNmNOo2Ubmd04grHQR/DpXtkiIU5fCvC9z2MuBx5ZUqwvppcLBiBQaip5tVYV6CWz0pnZBpzkkpU89SCuhSBu0V6SXgdXAwvCSilDFt/awlZw6vcz1wLhIv7p9HehyoOxDDz0qBbJykONh4BYwkR8aB167B+SoOt/43U8E0rLzPx0IlZ4LHW+h9QmHgHnAGeBFWC+2uhx64jojQslNyEQq7xLvdy/udufX073hzh8965arrNsVwF3gnG3i6dxUYSqMKCN1I/2j5jrnn21XOtS8FbrW9RtRajo37DiE5i+WwePmg4OPpQAAAABJRU5ErkJggg=="/>
+              </svg>
+              <a class="header__top-link" href="#">Вопрос-ответ</a>
+            </li>
+
+            <li class="header__top-item">
+              <svg class="top-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="18" viewBox="0 0 19 18">
+                <image id="email-icon" width="19" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAASCAYAAAC5DOVpAAABdElEQVQ4ja3UsUuVYRTH8Y9yvREKbUESNxAcFAoiaAhEHEyXcDNQWkKEhhbHhkChtSWIhvwDbEuXIkREaCg0KFDQKZCCBsFBorj4yBNHeJH73qvYDx5eeJ/z+77nPOc8b1tKSRN1YwzD+IC3+FEW3l7yvoq7mEMHHsZzLt5XG5kaZXYb93AVz/GtsHcdM9jFEj6VwS5gCnewHqAyZeAtfMRr/CnChnA/vvgC+80OMnQJj6OCBaxk2CNcxia+oxcX0awzbfiNHVxDP37lBsyihq+YRBfqLbKqR9xk+Gr/OCml+ZTSaErpc0ppMZd9hrUYvuyfz5nt4R0msI2X6GmRWU/EbYcv+/cqhZnJ9T/BAJ5hNYb0ZwFyJYZ4MLq4hr+xV60UDjTFxnKAMvgp3mALfRgP+IMT55r9KhqrHtN+E7nbB+jEK2yU1V4GO9YXTGME71vElt7Nk2oJOgvsVPrvsLya/tROoexvz3czj0G+EofnSoobR5x4kzfukOKqAAAAAElFTkSuQmCC"/>
+              </svg>            
+              <a class="header__top-link" href="#">Контакты</a>
+            </li>
+          
+          </ul>
+        </div>
+      </div>
+ 
+      <div class="header__bot-wrapper">
+        <div class="header__bot container">
+
+          <div class="header__logo">
+            <a class="header__link" href="#">
+              <img class="header__logo" src="img/logo.png" alt="Logo">
+            </a>
+          </div>
+
+          <ul class="header__bot-list">
+            <li class="header__bot-item">
+              <a href="" class="header__bot-link">ЖЕНЩИНАМ</a>
+            </li>
+            <li class="header__bot-item">
+              <a href="" class="header__bot-link">МУЖЧИНАМ</a>
+            </li>
+            <li class="header__bot-item">
+              <a href="" class="header__bot-link">ДЕТЯМ</a>
+            </li>
+          </ul>
+      
+          <button class="header__button header__button-left">
+            БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ МОДЕЛЬЕРА
+          </button>
+
+          <button class="header__button header__button-right">
+            ЗАКАЖИТЕ ШУБУ ПО ВАШИМ МЕРКАМ
+          </button>
+
+          <svg class="header__bot-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="19" viewBox="0 0 19 19">
+            <image id="phone-icon" width="19" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAABjklEQVQ4jZ3UvWsUcRDG8c+KRHxBC2OhQWsJKBYi+idYCpaCmsRtEhVJYWUhKkggIsFWL6KlZYoUYi8qBCtrFUERX4Ih0egpI7OwHHd6ew9sM/vb7z4z85spyrKU2ol7eI5rBtCG/GQ37uMl9uLKoLBhtPA4IRdxcBBgwC5gCbcztopzOIRLTWAbcQTHO+JfMIkFvMGjfp39wu8u7+IHr/CiibN17MG7WjxSP4opfOoXFs4WMYvNtfgBfGgCqmCtrNE8NmX8PHbgRlPY9yx2pPsQQ1jLFPc3AVaXto0zCbmbKa9gLFPuBI7gZC9Y6CcmEjiHbfiK0xjF9Ty3CzdxGdO9YDLlqQTeSoefE7gvL3Y8T3ACx3AVRTdYBZxO4B1swTLG0+3TbNpblFnXv6NX3xqdGsp0t2ft1nqc25puX3dzVulHrcsPEt5N0agYucP/goVi1MJVpB4rqrqHdcWWifku/wergGfxLZdnNCIU387kDMeWeR+z2Y/W2+32ZFEUE0VRRH2iTnE3n+EUPsIfQdtaY8MjuFsAAAAASUVORK5CYII="/>
+          </svg>
+        
+          <a class="header__bot-tel" href="tel:+79283471718" class="tel"> +7 928 347 17 18 </a>
+        </div>
+      </div>
+
   </header>
 
-  <main>
-    <div class="img"></div>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
+  <main class="container">
+    
   </main>
 
-  <footer>
-    <div class="image"></div>
+  <footer class="container">
   </footer>
   
 </body>
