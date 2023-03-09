@@ -70,8 +70,6 @@
 
     &__info {
         position: absolute;
-        z-index: 2;
-
         bottom: 26px;
         left: 27px;
         right: 26px;
@@ -108,13 +106,17 @@
     font-size: 14px;
     padding: 20px 115px;
     position: absolute;
-    z-index: 3;
     display: none;
     left: 28px;
     right: 27px;
     bottom: -35px;
+    letter-spacing: 2px;
 }
 
 .tovar:hover .dropbtn {
     display: block;
+}
+
+.wrapper {
+    margin-top: 200px;
 }
