@@ -101,7 +101,7 @@
             right: 35px;
             background: #f9f8f9;
             text-align: center;
-            padding: 50px 50px 41px 34px;
+            padding: 45px 50px 41px 34px;
             text-align: left;
 
             &-category {
@@ -141,6 +141,10 @@
             letter-spacing: 2px;
         }
     }
+
+    &__slider {
+        position: relative;
+    }
         
 }
 
@@ -156,16 +160,16 @@
    background: #304770 ;
    opacity: .9;
    position: absolute;
-   left: 1387px;
-   top: 380px;
+   left: 700px;
+   top: 213px;
    z-index: 20;
 }
 
 .next_arrow_main {
     background: #304770 ;   
     position: absolute;
-    left: 1422px;
-    top: 380px;
+    left: 735px;
+    top: 213px;
 }
 
 .button-arrow {

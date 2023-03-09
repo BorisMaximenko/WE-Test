@@ -106,15 +106,18 @@
     font-size: 14px;
     padding: 20px 115px;
     position: absolute;
-    display: none;
+    // display: none;
     left: 28px;
     right: 27px;
     bottom: -35px;
     letter-spacing: 2px;
+    opacity: 0;
 }
 
 .tovar:hover .dropbtn {
-    display: block;
+    // display: block;
+    transition: 1.3s;
+    opacity: 1;
 }
 
 .wrapper {
