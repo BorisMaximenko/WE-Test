@@ -1,0 +1,67 @@
+.advantage {
+   background: $lightest;
+   padding-top: 36px;
+   padding-bottom: 48px;
+
+   &__main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 220px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &-svg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 57px;
+            height: 72px;
+        }
+
+        &-naiming {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            line-height: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            padding-bottom: 10px;
+            height: 56px;
+        }
+
+        &-description {
+            text-align: center;
+            font-size: 15px;
+            line-height: 18px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+   }
+}
+
+
+// .advantage__main-card:nth-last-child(-n+4) { /* последние 3 потомка */
+//     border-right: 1px solid #f4f4f4;
+//     border-left: 1px solid #f4f4f4;
+// }
+  
+// .advantage__main-card:last-child { /* последние 3 потомка */
+//     border: none;
+// }
+
+// .advantage__main-card:nth-child(3) {
+//     border: none;
+// }
+
+.advantage__main-card:nth-child(2n) {
+    border-right: 1px solid #f4f4f4;
+    border-left: 1px solid #f4f4f4;
+}

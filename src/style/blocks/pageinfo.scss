@@ -1,0 +1,71 @@
+.pageinfo {
+    display: flex;
+
+    &__left {
+        background: url(/src/img/pageinfo1.png)no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: auto;
+        color: $lightest;
+        text-align: center;
+        padding-top: 68px;
+        padding-left: 162px;
+        padding-right: 162px;
+        padding-bottom: 47px;
+
+        &-top {
+            font-size: 14px;
+            line-height: 25px;
+            font-weight: 300;
+            text-transform: uppercase;
+            padding-bottom: 33px;
+        }
+
+        &-mid {
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 300;
+            text-transform: uppercase;
+            padding-bottom: 33px;
+        }
+
+        &-bot {
+            font-size: 16px;
+            line-height: 25px;
+            padding-bottom: 43px;
+        }
+
+        &-btn {
+            color: $lightest;
+            border: 1px solid $lightest;
+            text-transform: uppercase;
+            padding: 18px 44px;
+        }
+    }
+
+    &__right {
+        background-color: #efefef;
+        width: 50%;
+        height: auto;
+        text-align: center;
+        padding-top: 72px;
+        padding-left: 150px;
+        padding-bottom: 90px;
+        padding-right: 150px;
+
+        &-naiming {
+            font-size: 34px;
+            line-height: 30px;
+            font-weight: 300;
+            padding-top: 30px;
+            padding-bottom: 36px;
+            text-transform: uppercase;
+        }
+
+        &-description {
+            font-size: 16px;
+            line-height: 25px;
+        }
+        
+    }
+}

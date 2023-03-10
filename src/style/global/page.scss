@@ -1,6 +1,23 @@
 .page {
     font-family: 'Circe', sans-serif;
     font-weight: 400;
-    background-color: #f8f8f8;
+    background-color: $lightest;
     color: $darkest;
+}
+
+.h1 {
+    font-size: 30px;
+    line-height: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-left: 3px solid #e9c04a;
+    border-right: 3px solid #e9c04a;
+    letter-spacing: 1px;
+    padding-top: 7px;
+    display: inline-block;
+    padding-bottom: 3px;
+    color: $darkest;
+
 }

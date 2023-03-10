@@ -1,11 +1,13 @@
 .hero {
     padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f8f8f8 ;
 
     
     &__top {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 36px;
+        padding-bottom: 22px;
         
         &-slider {
             width: 770px;
@@ -36,6 +38,7 @@
         &-right {
             position: relative;
         }
+        
 
     }
 
@@ -86,9 +89,9 @@
     }
 
     &__main {
-    width: 100%;
-    position: relative;
-    cursor: pointer;
+        width: 100%;
+        position: relative;
+        cursor: pointer;
 
         &__image {
             position: relative;

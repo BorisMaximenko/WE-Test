@@ -1,0 +1,72 @@
+.about {
+    background: url(/src/img/aboutmain.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 96px;
+    padding-bottom: 218px;
+    text-align: center;
+    position: relative;
+
+    &__h1 {
+        color: $lightest;
+        
+    }
+
+    &__main {
+        background-color: $lightest;
+       
+        margin-top: 90px;
+        position: absolute;
+
+        &-top {
+           display: flex;
+           background: #f8f8f8;
+           padding-top: 34px;
+           padding-left: 33px;
+           padding-right: 33px;
+
+            &-img {
+                position: relative;
+                width: 50%;
+                
+                &-cl {
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                }
+            }
+
+            &-info {
+                width: 50%;
+                font-size: 18px;
+                line-height: 24px;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                padding-right: 111px;
+                text-align: left;
+                padding-left: 28px;
+            }
+        }
+
+        &-bot {
+            padding-left: 50%;
+            padding-top: 31px;
+
+            &-info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;             
+                padding-left: 28px;
+
+                &-description {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 300;
+                    text-align: left;
+                    padding-bottom: 31px;
+                }
+
+            }
+        }
+    }
+}
