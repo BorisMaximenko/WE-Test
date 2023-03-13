@@ -7,21 +7,25 @@
     &__top {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 22px;
         
         &-slider {
-            width: 770px;
-            height: 611px;
-        }
-        
-        &-right-t {
-            position: relative;
-            padding-bottom: 22px;
+            width: 66%;
         }
 
-        &-right-b {
-            position: relative;
+        &-right {
+            width: 33%;
+
+            &-t {
+                position: relative;
+                padding-bottom: 22px;
+            }
+    
+            &-b {
+                position: relative;
+            }
+
         }
+        
     }
     
     &__link {
@@ -163,7 +167,7 @@
    background: #304770 ;
    opacity: .9;
    position: absolute;
-   left: 700px;
+   right: 35px;
    top: 213px;
    z-index: 20;
 }
@@ -171,7 +175,7 @@
 .next_arrow_main {
     background: #304770 ;   
     position: absolute;
-    left: 735px;
+    right: 0px;
     top: 213px;
 }
 

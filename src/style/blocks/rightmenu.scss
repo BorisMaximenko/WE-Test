@@ -1,0 +1,42 @@
+.right__menu {
+    
+    display: inline-block;
+    position: fixed;
+    top: 27%;
+    right: -65px;
+
+    // display: none;
+
+    &-list {
+        display: flex;
+        flex-direction: column;   
+    }
+
+    &-item {
+        padding: 13px;
+        background-color: #375281;
+        padding-bottom: 10px;
+        border: 1px solid $lightest;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 0.4s;
+        font-size: 12px;
+        line-height: 13px;
+        width: 113px;
+    }
+
+    &-link {
+        color: $lightest;
+        padding-left: 14px;
+    }
+}
+
+.right__menu-item:hover {
+    transform: translateX(-64px);
+    
+}
+
+
+
+

@@ -1,0 +1,54 @@
+.sale {
+    padding-top: 100px;
+    padding-bottom: 45px;
+
+    &__tovar__info-art {
+        display: block;
+        padding-bottom: 26px;
+    }
+
+    &__tovar__info-naiming {
+        padding-bottom: 10px;
+    }
+
+    &__tover {
+        position: absolute;
+        left: 27px;
+        top: 17px;
+        z-index: 2;
+
+        &-skidka {
+            color: $lightest;
+            background-color: #c2242d;
+            padding: 30px 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        &-new {
+            color: $darkest;
+            background-color: $lightest;
+            padding: 30px 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        &-prices {
+            display: flex;
+            align-items: baseline;
+
+            &-old {
+                padding-right: 30px;
+                padding-left: 7px;
+                font-size: 18px;
+                color: #d2d1d2;
+                text-decoration: line-through;
+
+
+            }
+        }
+
+
+
+    }
+}
