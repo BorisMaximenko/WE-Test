@@ -13,22 +13,3 @@ $(document).ready(function(){
 
 
 
-function onEntry(entry) {
-  entry.forEach(change => {
-    if(change.isIntersecting) {
-      change.targer.classList.add('element-show');
-    }
-  })
-}
-
-let options = {
-  threshold: [0.5]};
-
-  let observer = new
-  IntersectionObserver(onEntry, options);
-  let element = 
-  document.querySelectorAll('.element-animation');
-
-  for (let elm of elements) {
-    observer.observe(elm);
-  }

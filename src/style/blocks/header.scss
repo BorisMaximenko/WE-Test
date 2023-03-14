@@ -4,7 +4,8 @@
         position: absolute;
         width: 236px;
         height: 114px;
-        top: 14px;
+        top: -28px;
+        
     }
 
     &__top {
@@ -46,6 +47,14 @@
         display: flex;
         align-items: center;
         background: $lightest;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto ;
+        margin-right: auto;
+        max-width: 1170px;
+
+        position: relative;
+        z-index: 2;
 
         &-link {
             font-size: 14px;
