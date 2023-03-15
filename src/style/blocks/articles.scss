@@ -11,6 +11,12 @@
     &__title {
         padding-top: 64px;
         padding-bottom: 70px;
+
+        @media (max-width: $tablet-width) {
+            padding-top: 42px;
+            padding-bottom: 42px;
+        }
+       
     }
 
     &__banner {

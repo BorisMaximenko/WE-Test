@@ -4,6 +4,11 @@
     position: fixed;
     top: 24%;
     right: -65px;
+    z-index: 30;
+
+    @media (max-width: $tablet-width) {
+           right: -73px;     
+    }
 
     // display: none;
 
@@ -24,6 +29,12 @@
         font-size: 12px;
         line-height: 13px;
         width: 113px;
+
+        @media (max-width: $tablet-width) {
+            padding: 8px;
+            font-size: 10px;   
+            line-height: 1;  
+        }
     }
 
     &-link {
@@ -33,8 +44,11 @@
 }
 
 .right__menu-item:hover {
-    transform: translateX(-64px);
-    
+    transform: translateX(-64px);  
+}
+
+.right__menu-item:focus {
+    transform: translateX(-64px);  
 }
 
 

@@ -2,9 +2,20 @@
     padding-top: 80px;
     padding-bottom: 45px;
 
+    @media (max-width: $tablet-width) {
+        padding-top: 45px;
+        padding-bottom: 25px;        
+    }
+    
+
     &__tovar__info-art {
         display: block;
-        padding-bottom: 26px;
+        padding-bottom: 20px;
+        
+        @media (max-width: $tablet-width) {
+           padding-bottom: 10px;
+           font-size: 14px;      
+        }
     }
 
     &__tovar__info-naiming {
@@ -17,12 +28,21 @@
         top: 17px;
         z-index: 2;
 
+        @media (max-width: $tablet-width) {
+                 left: 15px;
+                 top: 13px;
+        }
+
         &-skidka {
             color: $lightest;
             background-color: #c2242d;
             padding: 30px 10px;
             font-size: 12px;
             text-transform: uppercase;
+
+            @media (max-width: $tablet-width) {
+                padding: 20px 5px;        
+            }
         }
 
         &-new {
@@ -31,11 +51,21 @@
             padding: 30px 10px;
             font-size: 12px;
             text-transform: uppercase;
+
+            @media (max-width: $tablet-width) {
+                padding: 20px 5px;      
+            }
         }
 
         &-prices {
             display: flex;
             align-items: baseline;
+
+            @media (max-width: $tablet-width) {
+                     justify-content: center;
+                     flex-direction: row;
+                     column-gap: 10px;
+            }
 
             &-old {
                 padding-right: 30px;
@@ -43,6 +73,10 @@
                 font-size: 18px;
                 color: #d2d1d2;
                 text-decoration: line-through;
+
+                @media (max-width: $tablet-width) {
+                     padding: 0;
+                }
 
 
             }

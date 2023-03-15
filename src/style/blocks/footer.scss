@@ -14,12 +14,23 @@
             flex-direction: row;
             column-gap: 33px;
             padding-right: 10px;
+
+            @media (max-width: $tablet-width) {
+                column-gap: 30px;
+            }
+           
         }
 
         &-item {
             font-size: 14px;
             letter-spacing: 1.3px;
             text-transform: uppercase;
+
+            @media (max-width: $tablet-width) {
+                font-size: 12px;
+                letter-spacing: normal;
+            }
+           
         }
     }
 
@@ -29,6 +40,12 @@
         flex-direction: row;
         column-gap: 67px;
         padding-bottom: 44px;
+
+        @media (max-width: $tablet-width) {
+            padding-top: 25px;
+            column-gap: 59px;
+        }
+       
 
         &-svg {
             position: absolute;
@@ -65,6 +82,11 @@
                 flex-direction: column;
                 row-gap: 10px;
                 padding-top: 12px;
+
+                @media (max-width: $tablet-width) {
+                    row-gap: 5px;
+                }
+               
             }
 
             &-naiming {
@@ -77,6 +99,11 @@
                 font-size: 13px;
                 color: #848484;
                 font-weight: 300;
+
+                @media (max-width: $tablet-width) {
+                    font-size: 12px;
+                }
+               
             }
         }
     }
@@ -103,6 +130,11 @@
 
 .footer__bot-list:first-child {
     padding-right: 70px;
+
+    @media (max-width: $tablet-width) {
+      padding-right: 30px;      
+    }
+   
 }
 
 
@@ -138,5 +170,17 @@
 
 [class*="ground-pane"] {
     filter: brightness(70%);
+}
+
+
+.map-go:hover {
+    background-color: rgb(211, 211, 211);
+}
+.map-go:focus {
+    background-color: rgb(224, 224, 224);
+}
+
+.map-go:active {
+    background-color: rgb(192, 192, 192);
 }
 

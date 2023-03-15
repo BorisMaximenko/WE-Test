@@ -4,4 +4,25 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+
+    @media (max-width: $tablet-width) {
+        max-width: 964px;
+        padding-right: 10px;
+        padding-left: 10px;
+    } 
+}
+
+
+
+
+.containernew {
+    max-width: 1200px;
+    margin-right: 375;
+    margin-left: 375;
+    padding: 0;
+
+    @media (max-width: $tablet-width) {
+        max-width: 964px;
+    } 
+
 }

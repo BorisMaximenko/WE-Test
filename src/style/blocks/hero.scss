@@ -3,6 +3,11 @@
     padding-bottom: 30px;
     background-color: #f8f8f8 ;
 
+    @media (max-width: $tablet-width) {
+       padding-top: 16px;
+       padding-bottom: 0;
+    }
+
     
     &__top {
         display: flex;
@@ -39,11 +44,21 @@
         align-items: center;
         justify-content: space-between;
 
+        @media (max-width: $tablet-width) {
+            position: relative;
+            top: -20px; 
+        }
+
         &-left,
         &-right {
             position: relative;
         }
         
+        &-left {
+            @media (max-width: $tablet-width) {
+                padding-right: 20px;   
+            }
+        }
 
     }
 
@@ -54,6 +69,11 @@
         line-height: 28px;
         font-weight: 300;
         text-transform: uppercase;
+
+        
+        @media (max-width: $tablet-width) {
+             font-size: 16px;   
+        }
 
         &-bot {
             font-weight: 400;
@@ -83,6 +103,11 @@
             left: 35px;
             max-width: 170px;
 
+            
+            @media (max-width: $tablet-width) {
+                padding: 15px 14px 17px 13px;
+            }
+
         }
 
         &-tb {
@@ -90,6 +115,11 @@
             top: 34px;
             left: 36px;
             max-width: 170px;
+
+            
+            @media (max-width: $tablet-width) {
+                padding: 15px 14px 17px 13px;
+            }
         }
     }
 
@@ -112,11 +142,26 @@
             padding: 45px 50px 41px 34px;
             text-align: left;
 
+            @media (max-width: $tablet-width) {
+                padding: 20px 20px 20px 20px;
+                left: 350px;
+                bottom: 47px;            
+                display: flex;
+                flex-direction: column;
+
+            }
+
             &-category {
                 font-size: 30px;
                 font-weight: 300;
                 line-height: 36px;
                 padding-bottom: 25px;
+
+                @media (max-width: $tablet-width) {
+                   font-size: 20px;
+                   line-height: 25px;
+                   padding-bottom: 12px; 
+                }
             
             }
 
@@ -125,6 +170,12 @@
                 line-height: 25px;
                 font-weight: 300;
                 padding-bottom: 38px;
+
+                @media (max-width: $tablet-width) {
+                font-size: 16px;
+                line-height: 20px;
+                padding-bottom: 16px; 
+                }
             }
 
             &-art {

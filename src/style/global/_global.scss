@@ -41,12 +41,65 @@ body {
 
 .slider {
     padding-top: 66px;
+
+    @media (max-width: $tablet-width) {
+      padding-top: 40px;      
+    }
+   
 }
 
 .novelties {
     padding-top: 85px;
     padding-bottom: 80px;
+
+    @media (max-width: $tablet-width) {
+          padding-top: 40px;
+          padding-bottom: 40px;  
+    }
+   
 }
 input {
     padding: 0;
 }
+
+a:hover {
+    filter: brightness(90%);
+    transition: 0.2s;
+    text-decoration: underline;
+}
+
+.hero__main-dropbtn:hover {
+    color: $lightest;
+    background-color: #304770;
+    transition: 0.2s ease;   
+}
+
+.hero__main-dropbtn:hover  a {
+    text-decoration: none;
+    filter: none;
+}
+
+.hero__main-dropbtn:focus {
+    color: $lightest;
+    background-color: #304770;
+    transition: 0.2s ease;   
+}
+
+.hero__main-dropbtn:focus  a {
+    text-decoration: none;
+    filter: none;
+}
+
+.hero__main-dropbtn:active {
+    color: $lightest;
+    background-color: #192946;
+    transition: 0.2s ease;   
+}
+
+.hero__main-dropbtn:active  a {
+    text-decoration: none;
+    filter: none;
+}
+
+
+

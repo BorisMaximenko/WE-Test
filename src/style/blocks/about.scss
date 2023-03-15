@@ -18,6 +18,12 @@
         margin-top: 90px;
         position: absolute;
 
+        @media (max-width: $tablet-width) {
+            margin-left: 10px;
+            margin-right: 40px;   
+            margin-top: 60px; 
+        }
+
         &-top {
            display: flex;
            background: #f8f8f8;
@@ -45,6 +51,14 @@
                 padding-right: 111px;
                 text-align: left;
                 padding-left: 28px;
+
+                @media (max-width: $tablet-width) {
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+                
             }
         }
 
@@ -52,6 +66,10 @@
             padding-left: 50%;
             padding-top: 31px;
             padding-right: 71px;
+
+            @media (max-width: $tablet-width) {
+               padding-top: 24px; 
+            }
 
             &-info {
                 display: flex;
@@ -65,6 +83,13 @@
                     font-weight: 300;
                     text-align: left;
                     padding-bottom: 31px;
+
+                    @media (max-width: $tablet-width) {
+                        padding-bottom: 25px;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+        
                 }
 
             }

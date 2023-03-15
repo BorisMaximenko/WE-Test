@@ -6,8 +6,14 @@
     background-size: cover;
     text-align: center;
     z-index: 0;
-    top: -58px;
+    top: -59px;
     position: relative;
+
+    @media (max-width: $tablet-width) {
+       top: -50px;  
+       padding-top: 60px;
+       padding-bottom: 50px;
+    }
 
     &__title {
         padding: 15px 30px 10px 30px;
@@ -27,6 +33,10 @@
     column-gap: 5px;
     cursor: pointer;
     padding-bottom: 65px;
+
+    @media (max-width: $tablet-width) {
+         padding-bottom: 20px;
+    }
 }
 
 .not__active {

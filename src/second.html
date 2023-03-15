@@ -114,7 +114,7 @@
         <div class="section-form-naiming">Снятие мерок</div>
         <p class="section-form-description">Для более точной оценки сроков пошива и стоимости изделия на заказ, <br> предлагаем вам заполнить следующие данные:</p>
 
-        <form action="https://jsonplaceholder.typicode.com/todos/1" autocomplete method="post" class="form">
+        <form action="https://postman-echo.com/post" autocomplete method="post" class="form" enctype="multipart/form-data">
 
         <div class="form__top">
 
@@ -151,7 +151,7 @@
                     <label for="#" class="form__top-item-label">ВЫСОТА ДО ТАЛИИ СПЕРЕДИ</label>
 
                     <div class="form__top-item-right">
-                        <input type="number" name="CHEST HEIGHT" class="form__top-item-input" >
+                        <input type="number" name="ВЫСОТА ДО ТАЛИИ СПЕРЕДИ" class="form__top-item-input" >
                         <p class="form__top-item-cm">см</p>       
                     </div>
     
@@ -174,7 +174,7 @@
                     <label for="#" class="form__top-item-label">ШИРИНА СПИНЫ</label>
 
                     <div class="form__top-item-right">
-                        <input type="number" name="CHEST HEIGHT" class="form__top-item-input" >
+                        <input type="number" name="ШИРИНА СПИНЫ" class="form__top-item-input" >
                         <p class="form__top-item-cm">см</p>       
                     </div>
     
@@ -196,7 +196,7 @@
                     <label for="#" class="form__top-item-label">ШИРИНА ПЛЕЧА</label>
 
                     <div class="form__top-item-right">
-                        <input type="number" name="CHEST HEIGHT" class="form__top-item-input" >
+                        <input type="number" name="ШИРИНА ПЛЕЧА" class="form__top-item-input" >
                         <p class="form__top-item-cm">см</p>       
                     </div>
     
@@ -220,7 +220,7 @@
                     <label for="#" class="form__top-item-label">ОБХВАТ ГРУДИ</label>
 
                     <div class="form__top-item-right">
-                        <input type="number" name="CHEST HEIGHT" class="form__top-item-input" >
+                        <input type="number" name="ОБХВАТ ГРУДИ" class="form__top-item-input" >
                         <p class="form__top-item-cm">см</p>       
                     </div>
     
@@ -240,10 +240,10 @@
                 </div>
 
                 <div class="form__top-item-info">
-                    <label for="#" class="form__top-item-label">ОБХВАТ БЕДЕР</label>
+                    <label for="#" class="form__top-item-label">ОБХВАТ ГРУДИ</label>
 
                     <div class="form__top-item-right">
-                        <input type="number" name="CHEST HEIGHT" class="form__top-item-input" >
+                        <input type="number" name="ОБХВАТ ГРУДИ" class="form__top-item-input" >
                         <p class="form__top-item-cm">см</p>       
                     </div>
     
@@ -264,7 +264,7 @@
                     <label for="#" class="form__top-item-label">ДЛИНА  СПИНЫ ДО ТАЛИИ</label>
 
                     <div class="form__top-item-right">
-                        <input type="number" name="CHEST HEIGHT" class="form__top-item-input" >
+                        <input type="number" name="ДЛИНА СПИНЫ ДО ТАЛИИ" class="form__top-item-input" >
                         <p class="form__top-item-cm">см</p>       
                     </div>
     
@@ -287,14 +287,14 @@
                     <label for="#" class="form__top-item-label">ДЛИННА ИЗДЕЛИЯ</label>
 
                     <div class="form__top-item-right">
-                        <input type="number" name="CHEST HEIGHT" class="form__top-item-input" >
+                        <input type="number" name="ДЛИННА ИЗДЕЛИЯ" class="form__top-item-input" >
                         <p class="form__top-item-cm">см</p>       
                     </div>
 
                     <label for="#" class="form__top-item-label">ДЛИННА РУКАВА</label>
 
                     <div class="form__top-item-right">
-                        <input type="number" name="CHEST HEIGHT" class="form__top-item-input" >
+                        <input type="number" name="ДЛИННА РУКАВА" class="form__top-item-input" >
                         <p class="form__top-item-cm">см</p>       
                     </div>
     
@@ -312,22 +312,22 @@
 
                 <div class="form__bot-all-line">
                     <label class="form__bot-all-label" for="">КАК К ВАМ ОБРАЩАТЬСЯ?</label>
-                    <input type="text" name="name" placeholder="Ваше имя *" class="form__bot-all-input">
+                    <input required type="text" name="name" placeholder="Ваше имя *" class="form__bot-all-input">
                 </div>
 
                 <div class="form__bot-all-line">
                     <label class="form__bot-all-label" for="">ДЛЯ ДАЛЬНЕЙШЕГО ОБЩЕНИЯ НАШЕГО сПЕЦИАЛИСТА С ВАМИ УКАЖИТЕ СВОИ  КОНТАКТЫ</label>
-                    <input type="number" name="name" placeholder="+7(__)___-__-__*" class="form__bot-all-input">
+                    <input required type="number" name="tel" placeholder="+7(__)___-__-__*" class="form__bot-all-input">
                 </div>
 
                 <div class="form__bot-all-line">
                     <label class="form__bot-all-label" for="">ВЫ МОЖЕТЕ УКАЗАТЬ ЖЕЛАЕМЫЙ РАЗМЕР, ЦВЕТ, ВИД МЕХА ИЛИ ЗАДАТЬ НАМ ЛЮБОЙ ИНТЕРЕСУЮЩИЙ ВАС ВОПРОС</label>
-                    <input type="text" name="name" placeholder="Ваш комментарий" class="form__bot-all-input form__bot-all-input-big">
+                    <input required type="text" name="comment" placeholder="Ваш комментарий" class="form__bot-all-input form__bot-all-input-big">
                 </div>
 
                 <div class="form__bot-all-line">
                     <label class="form__bot-all-label" for="">ПО ЖЕЛАНИЮ, ВЫ МОЖЕТЕ ПРИКРЕПИТЬ СВОЕ ФОТО ИЛИ КАРТИНКУ С ФАСОНОМ ИЗДЕЛИЯ</label>
-                    <input type="file" name="name" placeholder="Прикрепить фото" class="form__bot-all-input form__bot-all-input-dotted">
+                    <input type="file" name="file" placeholder="Прикрепить фото" class="form__bot-all-input form__bot-all-input-dotted">
                     <span class="input-file">Прикрепить фото</span>
                 </div>
 

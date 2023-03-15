@@ -1,6 +1,11 @@
 .recommend {
     padding-top: 362px;
     padding-bottom: 75px;
+
+    @media (max-width: $tablet-width) {
+          padding-top: 240px;     
+    }
+
 }
 
 .hero__slider {
